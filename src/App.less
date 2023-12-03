@@ -20,6 +20,14 @@
   filter: drop-shadow(0 0 30px #61dafbaa);
 }
 
+.logo.hh:hover {
+  filter: drop-shadow(0 0 30px #c52929b0);
+}
+
+.logo.vlad:hover {
+  filter: drop-shadow(0 0 30px #b5e352c4);
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -31,11 +39,11 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(1) .logo {
+  a .logo {
     animation: logo-spin infinite 20s linear reverse;
   }
 
-  a:nth-of-type(2) .logo {
+  a:nth-of-type(odd) .logo {
     animation: logo-spin infinite 20s linear;
   }
 }
@@ -46,4 +54,46 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 110vh;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+
+  &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 420%;
+      height: 420%;
+      background: linear-gradient(145deg, #818fba, #7fba9e, #818fba, #7fba9e, #818fba);
+      animation: dynamic-background-gradient 25s linear infinite;
+  }
+}
+
+@keyframes dynamic-background-gradient {
+  from {
+      transform: translate(0, 0);
+  }
+
+  to {
+      transform: translate(-50%, -50%);
+  }
+}
+
+.wow {
+  font-size: 64px;
+  line-height: 1.5;
+  margin: 100px 0 5px;
+
+  + p {
+    font-size: 32px;
+  }
 }
