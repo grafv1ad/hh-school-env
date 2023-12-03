@@ -2,11 +2,14 @@ module.exports = {
   root: true,
   env: { browser: true, es2020: true },
   extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:react-hooks/recommended',
+    '@hh.ru/eslint-config',
+    'prettier',
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  ignorePatterns: [
+    'dist', 
+    '.eslintrc.cjs',
+    'custom.d.ts',
+  ],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh'],
   rules: {
@@ -14,5 +17,12 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'no-use-before-define': 'off',
   },
+  overrides: [
+    {
+      files: './src*.{ts,tsx}',
+      extends: '@hh.ru/eslint-config/typescript',
+    },
+  ],
 }
