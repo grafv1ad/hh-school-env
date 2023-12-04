@@ -1,4 +1,4 @@
-# [Vite](https://vitejs.dev) + [React](https://react.dev) + [HH](https://hh.ru/) + [Vlad](https://vladpetrov.me) (:
+# [Vite](https://vitejs.dev) + [React](https://react.dev) + [HH](https://hh.ru/) + [Vlad](https://vladpetrov.me) + [Ivan](https://github.com/ipetropolsky/) (:
 
 ### Скрипты
 

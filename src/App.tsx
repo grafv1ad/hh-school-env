@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import viteLogo from '../public/vite.svg';
 import hhLogo from './assets/hh.svg';
+import ivanFace from './assets/ivan.png';
 import reactLogo from './assets/react.svg';
 import vladFace from './assets/vlad.png';
 
@@ -25,8 +26,11 @@ function App() {
         <a href="https://vladpetrov.me" target="_blank">
           <img src={vladFace} className="logo vlad" alt="Vlados :)" />
         </a>
+        <a href="https://github.com/ipetropolsky/" target="_blank">
+          <img src={ivanFace} className="logo ivan" alt="Ivan Petropolsky" />
+        </a>
       </div>
-      <h1>Vite + React + HH + Vlad</h1>
+      <h1>Vite + React + HH + Vlad + Ivan</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
