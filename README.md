@@ -1,30 +1,30 @@
-# React + TypeScript + Vite
+# [Vite](https://vitejs.dev) + [React](https://react.dev) + [HH](https://hh.ru/) + [Vlad](https://vladpetrov.me) (:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Скрипты
 
-Currently, two official plugins are available:
+`yarn dev` → запуск локального сервера \
+`yarn build` → сборка проекта в директории **dist** \
+`yarn lint` → запуск линтеров \
+`yarn deploy` → пуш проекта в [GitHub Pages](https://grafv1ad.github.io/hh-school-env/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Выбор бандлера
 
-## Expanding the ESLint configuration
+Мною был выбран **Vite.js**, потому что:
+1. Уже был опыт работы с Webpack, хотелось расширить кругозор
+2. Я никогда не работал с React, а Vite предоставляет готовый шаблон для него из коробки, что позволило проще влиться в процесс
+3. Ну и он сейчас более популярен на фоне остальных → более актуален
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Сложности
 
-- Configure the top-level `parserOptions` property like this:
+Немного помучался с настройками конфигов hh, жонглируя версиями. \
+Выглядел примерно как в этом меме:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
+![мем](public/meme.jpg) 
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Долго возился с GH Pages, так как вначале хотел стильно-модно сделать сборку автоматической, прямо в гите, и это работало, и я радовался, ровно до тех пор, пока я не обновил yarn, в итоге плюнул и сделал ручной деплой из консоли)). В этом коммите можно поглядеть на мои потуги → [a3b3941](https://github.com/grafv1ad/hh-school-env/commit/a3b3941)
+
+### По итогу
+
+Для меня домашка оказалась сложной, провозлися я с ней большую часть дня, начиная с панический мыслей, что я ничего не понимаю и у меня не получится, заканчивая криками радости и взмыванию рук вверх, короче было увлекательно, спасибо!
+
+Узнал очень много нового, безумно много нового, Yarn P'n'P cтал для меня совсем уж невероятным открытием, плюс наконец разобрался с вещами, которые давно откладывал, например GH Pages.
