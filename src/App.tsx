@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import viteLogo from "../public/vite.svg";
-import hhLogo from "./assets/hh.svg";
-import reactLogo from "./assets/react.svg";
-import vladFace from "./assets/vlad.png";
+import viteLogo from '../public/vite.svg';
+import hhLogo from './assets/hh.svg';
+import reactLogo from './assets/react.svg';
+import vladFace from './assets/vlad.png';
 
-import "./App.less";
+import './App.less';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -32,7 +32,7 @@ function App() {
           count is {count}
         </button>
         <div className="wow">＼(^ o ^)／</div>
-        <p>Во славу бандлеров!</p>
+        <p>For the glory of the bundlers!</p>
       </div>
     </>
   );
