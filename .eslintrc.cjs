@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
-  extends: ["@hh.ru/eslint-config", "prettier"],
+  extends: ["@hh.ru/eslint-config"],
   ignorePatterns: [
     "dist", 
     ".eslintrc.cjs", 
